@@ -6,16 +6,16 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using Logbook.Data;
-using Logbook.Data.Models;
+using Logbook.Models;
+using Logbook.Models;
 
 namespace Logbook.Pages
 {
     public class EditModel : PageModel
     {
-        private readonly Logbook.Data.ApplicationDbContext _context;
+        private readonly Logbook.Models.ApplicationDbContext _context;
 
-        public EditModel(Logbook.Data.ApplicationDbContext context)
+        public EditModel(Logbook.Models.ApplicationDbContext context)
         {
             _context = context;
         }

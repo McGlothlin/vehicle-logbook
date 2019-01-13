@@ -5,16 +5,16 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using Logbook.Data;
-using Logbook.Data.Models;
+using Logbook.Models;
+using Logbook.Models;
 
 namespace Logbook.Pages
 {
     public class CreateModel : PageModel
     {
-        private readonly Logbook.Data.ApplicationDbContext _context;
+        private readonly Logbook.Models.ApplicationDbContext _context;
 
-        public CreateModel(Logbook.Data.ApplicationDbContext context)
+        public CreateModel(Logbook.Models.ApplicationDbContext context)
         {
             _context = context;
         }

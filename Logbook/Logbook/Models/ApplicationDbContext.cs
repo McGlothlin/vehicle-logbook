@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using Logbook.Data.Models;
 
-namespace Logbook.Data
+namespace Logbook.Models
 {
     public class ApplicationDbContext : IdentityDbContext
     {

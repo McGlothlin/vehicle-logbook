@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
-namespace Logbook.Data.Models
+namespace Logbook.Models
 {
     public class Vehicle
     {
@@ -14,7 +11,7 @@ namespace Logbook.Data.Models
         public string Model { get; set; }
         public string Color { get; set; }
         //public string VIN { get; set; }
-        public string Mileage { get; set; }
+        public long Mileage { get; set; }
 
         public ICollection<ServiceItem> ServiceItems { get; set; }
     }

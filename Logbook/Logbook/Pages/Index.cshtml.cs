@@ -5,16 +5,16 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
-using Logbook.Data;
-using Logbook.Data.Models;
+using Logbook.Models;
+using Logbook.Models;
 
 namespace Logbook.Pages
 {
     public class IndexModel : PageModel
     {
-        private readonly Logbook.Data.ApplicationDbContext _context;
+        private readonly Logbook.Models.ApplicationDbContext _context;
 
-        public IndexModel(Logbook.Data.ApplicationDbContext context)
+        public IndexModel(Logbook.Models.ApplicationDbContext context)
         {
             _context = context;
         }

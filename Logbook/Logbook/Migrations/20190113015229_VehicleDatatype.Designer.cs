@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Logbook.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20190113002331_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20190113015229_VehicleDatatype")]
+    partial class VehicleDatatype
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -27,7 +27,7 @@ namespace Logbook.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("Interval");
+                    b.Property<long?>("Interval");
 
                     b.Property<string>("Task");
 
@@ -50,7 +50,7 @@ namespace Logbook.Migrations
 
                     b.Property<string>("Make");
 
-                    b.Property<string>("Mileage");
+                    b.Property<long>("Mileage");
 
                     b.Property<string>("Model");
 
